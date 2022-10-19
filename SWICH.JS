@@ -1,3 +1,4 @@
+/*
 const expression = "papayas"
 switch (expression){
     case "oranges":
@@ -14,3 +15,22 @@ switch (expression){
     default:
         console.log(`Sorry , we are out of ${expression}`)
 }
+*/
+const animal = prompt("¿Cual es tu animal favorito?")
+
+if(animal === "cat"){
+    console.log("the cats are amazing")
+}else {
+    console.log("the other pets too are funny")
+}
+
+
+animal === "cat"
+    ? console.log("the cats are amazing", animal)
+    : console.log("the others pets to are fynny")
+
+const teamUser = prompt("¿Cual es tu equipo favorito?")
+
+teamUser ==="River Plate"
+    ? console.log("you're a great fan")
+    : console.log("you're a bad fan")
