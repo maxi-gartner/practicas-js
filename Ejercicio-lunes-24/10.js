@@ -233,8 +233,52 @@ const arrayUsers =    [
 
 console.log("arrayUsers", arrayUsers);
 
+
 for(let i = 0; i < arrayUsers.length; i++){
     /* console.log(arrayUsers[i].name,"-", arrayUsers[i].username); */
     /* console.log(`Hola ${arrayUsers[i].name} tu usuario es ${arrayUsers[i].username} `) */
-    console.log(arrayUsers[i].address.geo)
+    /* console.log(arrayUsers[i].address.geo) */
 }
+
+console.warn("Nuevo console.log usando POP")
+arrayUsers.pop(); // remove the last element from array users 
+console.log("arrayUsers", arrayUsers); 
+
+console.warn("Nuevo console.log usando SHIFT")
+arrayUsers.shift(); // remove the first element from array users
+console.log("arrayUsers", arrayUsers); 
+
+console.warn("Nuevo console.log usando PUSH")
+arrayUsers.push(  // add one element to array users
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+        }
+)
+console.log("arrayUsers" , arrayUsers)
+
+console.warn("Nuevo console.log usando SLICE")
+console.log(arrayUsers.slice(0, 4))
+console.log(arrayUsers.slice(1, 4))
+console.log(arrayUsers.slice(2, 4))
+console.log(arrayUsers.slice(3, 5))
+
