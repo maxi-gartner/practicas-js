@@ -1,4 +1,4 @@
-    [
+const arrayUsers =    [
         {
         "id": 1,
         "name": "Leanne Graham",
@@ -231,6 +231,10 @@
         }
     ]
 
-for(let i = 0 ; i<id; i++){
-    console.log(`Hola ${name}`)
+console.log("arrayUsers", arrayUsers);
+
+for(let i = 0; i < arrayUsers.length; i++){
+    /* console.log(arrayUsers[i].name,"-", arrayUsers[i].username); */
+    /* console.log(`Hola ${arrayUsers[i].name} tu usuario es ${arrayUsers[i].username} `) */
+    console.log(arrayUsers[i].address.geo)
 }
