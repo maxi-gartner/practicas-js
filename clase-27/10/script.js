@@ -12,7 +12,38 @@ console.log("number to string", number.toString());
 console.log("number to string", Number(number));
 
 console.warn("Como concatenar arrays")
+
 const arrayUsers2 = ["leo","rochius","jose","cami","andi"];
 const arrayUsers3 = ["esteban","brisa","juan","ivan"]
+
 console.log(arratUsers.concat(arrayUsers2,arrayUsers3));
 console.log(arrayUsers2.concat(arrayUsers3,arratUsers));
+
+console.warn("orderOneSpread")
+const ordderOneSpread  = [...arratUsers,...arrayUsers2,...arrayUsers3]
+console.log(ordderOneSpread)
+
+console.warn("orderWhitoutSpread")
+const orderWhitoutSpread  = [arratUsers,arrayUsers2,arrayUsers3]
+console.log(orderWhitoutSpread)
+
+console.warn("ordenar primero un valor especifico")
+const newOrderOneSpread = ["sher",...ordderOneSpread]
+console.log(newOrderOneSpread)
+
+const userFabi = {
+    name: "fabi",
+    lastname: "Tureo",
+    age: 28,
+    isWorking: true,
+}
+console.log("userFabi",userFabi)
+
+userFabi.havePets = true;
+
+const updateFabi = {
+    ...userFabi,
+    havePets: true,
+};
+
+console.log("userFabiConPets",userFabi)
