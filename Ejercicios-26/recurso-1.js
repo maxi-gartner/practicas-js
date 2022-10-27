@@ -253,7 +253,7 @@ const JSONPlaceholder = [
         i++;
     }
     console.warn("Ejercicio 5")
-    let numero = 4 /* prompt("ingrese un numero entre el 1 y el 10") */;
+    let numero = prompt("ingrese un numero entre el 1 y el 10") ;
     
     console.log(`
     El usuario ${JSONPlaceholder[numero].username} se llama ${JSONPlaceholder[numero].name}, 
@@ -326,4 +326,9 @@ const JSONPlaceholder = [
     console.log(JSONPlaceholder)
 
     console.warn("Ejercicio 6-e")
-    
+
+    const elemento = JSONPlaceholder.find(elemento => { //find recibe una 
+        return elemento.username === "Kamren"
+    })
+    console.log(elemento.name.toUpperCase(),"-", elemento.username.toUpperCase(),"-",elemento.email.toUpperCase())
+    console.log(elemento.name.toLowerCase(),"-", elemento.username.toLowerCase(),"-",elemento.email.toLowerCase())
