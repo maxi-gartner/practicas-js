@@ -1,10 +1,10 @@
 const rickAndMortyApi = {
-    info: {
-    count: 826,
-    pages: 42,
-    next: "https: /rickandmortyapi.com/api/character?page=2",
-    prev: null,
-    },
+    info: { 
+            count: 826,
+            pages: 42,
+            next: "https: /rickandmortyapi.com/api/character?page=2",
+            prev: null,
+            },
     results: [
     {
         id: 1,
@@ -615,5 +615,27 @@ const rickAndMortyApi = {
     ],
 };
 
-console.log(rickAndMortyApi)
+console.warn("Ejercicio 1")
+for (let i = 0; i < rickAndMortyApi.results.length; i++) {
+    console.log(`
+    Nombre de Personaje: ${rickAndMortyApi.results[i].name}
+    Especie: ${rickAndMortyApi.results[i].species}
+    Lugar de Origen: ${rickAndMortyApi.results[i].location.name}
+    Cantidad de apariciones: ${rickAndMortyApi.results[i].episode.length}
+`)}
 
+console.warn("ejercicio 2")
+console.log(`
+Count: ${typeof rickAndMortyApi.info.count}
+Pages: ${typeof rickAndMortyApi.info.pages}
+Next: ${typeof rickAndMortyApi.info.next}
+Prev: ${typeof rickAndMortyApi.info.prev}`)
+
+console.warn("ejercicio 3")
+console.log(`
+Count: ${rickAndMortyApi.info.count}
+Pages: ${rickAndMortyApi.info.pages}
+Next: ${rickAndMortyApi.info.next}
+Prev: ${rickAndMortyApi.info.prev}`)
+
+console.warn("para probar")
