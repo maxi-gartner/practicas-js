@@ -68,3 +68,5 @@ console.log(users.study[3])
 console.log(users.study[2].tec)
 console.log(userJL.studies[1].technology)
 
+
+
