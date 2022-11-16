@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    display: grid;
+    justify-items: center;
+}
+
+.counter{
+    display: grid;
+    padding: 20px;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0099cc;;
+    justify-items: center;
+    border: 5px ridge rgb(61, 61, 61);
+    border-radius: 10px;
+}
+
+.display{
+    display: grid;
+    background-color: #a0a0a0;;
+    grid-column: 1/5;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-items: center;
+    align-items: center;
+}
+
+.buttomAdd{
+    display: grid;
+    grid-column: 2/2;
+    width: 150px;
+    height: 30px;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buttonDiscount{
+    display: grid;
+    grid-column: 3/3;
+    width: 150px;
+    height: 30px;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
